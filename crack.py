@@ -157,10 +157,10 @@ def nge_krek():
 		print(f'└── terkumpul : '+str(len(id)))
 		atur_dulu()
 	except requests.exceptions.ConnectionError:
-		baz_anim('{mer}└── koneksi terputus')
+		baz_anim(f'{mer}└── koneksi terputus')
 		exit()
 	except (KeyError,IOError):
-		baz_anim('{mer}└── teman tidak publik')
+		baz_anim(f'{mer}└── teman tidak publik')
 		exit()
 
 ###----------[  ATUR DULU STER ]----------###
