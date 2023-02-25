@@ -27,3 +27,14 @@ $ cd simpel
 $ git pull
 $ python opsi.py
 ```
+## Informasi
+> ketik ya (untuk mulai crack)
+
+> on/of mode pesawat tiap (400 id)
+
+> crack mayan lambat harap (sabar)
+```
+make doang nggak follow gg lu bro
+```
+## KASIH BINTANG WOY 🌟
+![Typing SVG](https://readme-typing-svg.herokuapp.com?lines=Selamat+Bersenang-senang....!+)
