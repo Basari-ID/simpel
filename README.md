@@ -10,7 +10,6 @@ $ pip install stdiomask
 $ git clone https://github.com/Basari-ID/simpel
 $ ls
 $ cd simpel
-$ git pull
 $ python crack.py
 ```
 ## Cek Hasil 
@@ -33,6 +32,9 @@ $ python opsi.py
 > on/of mode pesawat tiap (400 id)
 
 > crack mayan lambat harap (sabar)
+```
+jangan gunakan akun pribadi buat diambil cokisnya
+```
 ```
 make doang nggak follow gg lu bro
 ```
