@@ -5,8 +5,6 @@ $ pkg install python git
 $ pkg install play-audio
 $ pip install requests mechanize
 $ pip install --upgrade pip
-$ pip install pycryptodome
-$ pip2 install requests
 $ pip install rich bs4
 $ pip install stdiomask
 $ git clone https://github.com/Basari-ID/simpel
@@ -28,7 +26,9 @@ $ git pull
 $ python opsi.py
 ```
 ## Informasi
-> ketik ya (untuk mulai crack)
+> ketik publik (crack id publik)
+
+> ketik file ( crack dari file)
 
 > on/of mode pesawat tiap (400 id)
 
