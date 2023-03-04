@@ -7,7 +7,7 @@ $ pip install requests mechanize
 $ pip install --upgrade pip
 $ pip install rich bs4
 $ pip install stdiomask
-$ git clone https://github.com/Basari-ID/simpel
+$ git clone https://github.com/CLAOUPY4/simpel
 $ ls
 $ cd simpel
 $ python crack.py
