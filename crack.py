@@ -164,7 +164,7 @@ def menu(id):
 		waktu(1)
 		login_men()
 	os.system('clear')
-	os.system('xdg-open https://chat.whatsapp.com/JRKRrH8wkE2A42Cb1e4bnL')
+	os.system('xdg-open https://chat.whatsapp.com/Bk9n3OYSK0h8yc4oHgHkZN')
 	waktu(1)
 	banner()
 	print(f'{xxx}─────────────────────────────')
