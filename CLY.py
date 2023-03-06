@@ -25,33 +25,34 @@ proxsi=open('socksku.txt','r').read().splitlines()
 
 ###----------[ USER AGENT 1 ]----------###
 for agenku in range(10000):
-	a='Mozilla/5.0 (Linux; U; Android'
+	a='Mozilla/5.0 (Linux; Android 11'
 	b=random.choice(['7.0','8.1.0','9','10','11','12'])
 	c='Mi A3 Build/QKQ1.190910.002; wv)'
 	d='AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
-	e=random.randrange(83,103)
+	e=random.randrange(84,103)
 	f='0'
 	g=random.randrange(4200,4900)
 	h=random.randrange(40,150)
-	i='Mobile Safari/537.36 OPR/52.2.2254.54723'
+	i='Mobile Safari/537.36 OPR/58.0.2254.58441'
 	uakuh=f'{a} {b}; {c} {d}{e}.{f}.{g}.{h} {i}'
 	usragent.append(uakuh)
 	
-	a='Mozilla/5.0 (Linux; Android'
+	a='Mozilla/5.0 (Linux; Android 11'
 	b=random.choice(['6.0.1','7.1.1','8.1.0'])
-	c='BASARI-ID Build/MMB29K)'
+	c='CLAOUPY4 Build/MMB29K)'
 	d='AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
 	e=random.randrange(83,103)
 	f='0'
 	g=random.randrange(4200,4900)
 	h=random.randrange(40,150)
-	i='Mobile Safari/537.36 OPT/1.7.21'
+	i='Mobile Safari/537.36 OPR/58.0.2254.58441'
 	uakuh=f'{a} {b}; {c} {d}{e}.{f}.{g}.{h} {i}'
 	usragent.append(uakuh)
 
 ###----------[ USER AGENT 2 ]----------###
 for agenkuw in range(10000):
-	a='Mozilla/5.0 (Linux; Android'
+	a='1Mozilla/5.0 (Linux; Android 11'
+	
 	b=random.choice(['8.1.0','9','10','11','12'])
 	c='CPH2109'
 	d='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
@@ -63,10 +64,10 @@ for agenkuw in range(10000):
 	uakuh=f'{a} {b}; {c} {d}{e}.{f}.{g}.{h} {i}'
 	usrgent2.append(uakuh)
 	
-	a='Mozilla/5.0 (Linux; Android'
+	a='Mozilla/5.0 (Linux; Android 11'
 	b=random.choice(['8.1.0','9','10','11','12'])
 	c='CPH2089'
-	d='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+	d='Mobile Safari/537.36 (KHTML, like Gecko) Chrome/'
 	e=random.randrange(83,103)
 	f='0'
 	g=random.randrange(4200,4900)
