@@ -33,9 +33,6 @@ $ python opsi.py
 
 > crack mayan lambat harap (sabar)
 ```
-jangan gunakan akun pribadi buat diambil cokisnya
-```
-```
 make doang nggak follow gg lu bro
 ```
 ## KASIH BINTANG WOY 🌟
